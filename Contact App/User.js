@@ -351,7 +351,7 @@ class User {
 }
 
 let a = User.newAdmin("Aditya", "Male", "India")
-let markObj = a.newUser("Mark", "male", "India")
+let markObj = a.newUser("Ajinkya", "male", "India")
 
 
 markObj.createContact("sam1")
@@ -359,13 +359,13 @@ markObj.createContact("sam2")
 console.log(markObj.getAllContact());
 
 markObj.createContactInfo(0, "phone_no", 94583452)
-markObj.createContactInfo(1, "email", "mark@gmail.com")
+markObj.createContactInfo(1, "email", "ajinkya@gmail.com")
 console.log(a.getUserById(1));
 console.log(markObj.getContactById(0));
 console.log(markObj.getContactInfoById(0,0));
 console.log(markObj.getAllContactInfo(0));
 
-console.log(markObj.updateContactInfo(0, 0, "jack"));
+console.log(markObj.updateContactInfo(0, 0, "victor"));
 console.log(markObj.getAllContactInfo(1));
 markObj.updateContact(0, "sam")
 
@@ -373,5 +373,5 @@ markObj.updateContact(0, "sam")
 console.log(a.getAllUsers());
 console.log(markObj.getAllContact());
 
-a.updateUser(1, "fullName", "mark samuel")
+a.updateUser(1, "fullName", "Ajinkya M")
 console.log(a.getAllUsers());
